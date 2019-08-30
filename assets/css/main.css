@@ -2049,6 +2049,7 @@
 			.t-event .t-time-wrapper {
 				position: absolute;
 				left: -90px;
+				top: 5px;
 			}
 
 			.t-event .t-time-base-wrapper {
