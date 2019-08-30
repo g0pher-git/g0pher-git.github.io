@@ -2048,8 +2048,8 @@
 
 			.t-event .t-time-wrapper {
 				position: absolute;
-				left: -90px;
-				top: 5px;
+				right: 100%;
+				top: 3px;
 			}
 
 			.t-event .t-time-base-wrapper {
@@ -2076,7 +2076,7 @@
 
 			.t-time-wrapper .t-time {
 				display: inline-block;
-				padding: 4px 6px;
+				padding: 4px 40px;
 			}
 
 			.t-time-base-wrapper .t-time {
