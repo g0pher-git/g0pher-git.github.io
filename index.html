@@ -1,27 +1,460 @@
 ---
-layout: default
-title: Home
+layout: index
 ---
+<!-- 소개 -->
+<article id="home" class="panel intro">
+	<header>
+		<h1>g0pher</h1>
+		<p>이재승 :: Lee Jae Seung</p>
+		<!-- SNS 목록 -->
+		<a href="https://www.facebook.com/profile.php?id=100005812020276" class="lnk fab fa-facebook-f" target="_blank"></a>
+		<a href="https://www.instagram.com/g0pher_/" class="lnk fab fa-instagram" target="_blank"></a>
+		<a href="https://github.com/g0pher98" class="lnk fab fa-github-alt" target="_blank"></a>
+		<a href="http://qr.kakao.com/talk/nhDWmikRi7SYZbqOXtZCOwK7_Ks-" class="lnk fas fa-comments" target="_blank"></a>
+	</header>
+	<img class="jumplink pic" src="images/profile.jpg" alt="" />
+</article>
 
-{% include intro.html %}
 
-<section class="post-list">
-  <div class="container">
-    {% for post in site.posts %}
-      {% unless post.next %}
-        <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
-        {% endif %}
-      {% endunless %}
-      <article class="post-item">
-        <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
-        <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
-      </article>
-    {% endfor %}
-  </div>
+<!-- 이력 -->
+<article id="result" class="panel">
+	<header>
+		<h2>소속 <span class="en">Belong</span></h2>
+	</header>
+	<ul>
+		<li>사이버 작전 사령부</li>
+		<li>K-Shield Jr. 1기 2등</li>
+		<li>경기대학교 침해사고대응팀(CERT)</li>
+		<li>K.knock 정보보호 동아리 8기 기장</li>
+		<li>경기대학교 재학</li>
+		<li>상명고등학교 졸업</li>
+		<li>상명중학교 졸업</li>
+	</ul>
 
-</section>
+	<header>
+		<h2>수상 <span class="en">Awards</span></h2>
+	</header>
+	<ul>
+		<li>사이버작전사령관상</li>
+		<li>K-Shield Jr. 보안사고분석대응 1기 "2등" 학업우수상</li>
+		<li>Creative 거북이 연구그룹 우수상 "경돌이와 경순이"</li>
+		<li>Creative 거북이 연구그룹 최우수상 "K-AI"</li>
+	</ul>
+
+	<header>
+		<h2>발표 <span class="en">Speech</span></h2>
+	</header>
+	<ul>
+		<li>인코그니토 "LOS를 통한 SQL Injection 기법 정리" 발표</li>
+		<li>프로젝트 "RANSOMWHERE" 발표</li>
+	</ul>
+
+	<header>
+		<h2>프로젝트 <span class="en">Project</span></h2>
+	</header>
+	<ul>
+		<li>경기대학교 정보알림이 챗봇 서비스 "경돌이" 개발 프로젝트</li>
+		<li>랜섬웨어 복호화 툴 찾아주는 "Ransomwhere" 개발 프로젝트</li>
+	</ul>
+
+	<header>
+		<h2>대회 <span class="en">Competition</span></h2>
+	</header>
+	<p>
+		<li>Shadow CTF 5등</li>
+	</p>
+
+	<header>
+		<h2>취약점 <span class="en">Vulnerability</span></h2>
+	</header>
+	<p>
+		None
+	</p>
+</article>
+
+
+<!-- 타임라인 -->
+<article id="timeline" class="panel">
+	<ul class="timeline">
+		<!-- 2020 -->
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-time-base-wrapper">
+						<span class="t-time">2020</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		
+		<!-- 2019 -->
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-time-base-wrapper">
+						<span class="t-time">2019</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">X-MAS CTF (166/2435)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/12/21</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">사이버작전사령관상</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/12/17</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">TUCTF</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/12/01</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">제7회 핀테크X인슈어테크 해커톤 본선</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/11/29</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">2019 KUCIS 세미나</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/11/23</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">제7회 핀테크X인슈어테크 해커톤 예선 통과</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/11/19</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Shadow CTF (5/56)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/30</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">HolyShield CTF (14/87)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/27</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">K.Knock GUACAMOLE 구축</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/25</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">국제치안산업박람회 참석</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/21</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">SECCON 2019 (115/1117)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/20</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">리눅스마스터 2급 합격</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/10/11</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">CCE 사이버공격방어대회 (66/161)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/28</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Newark Academy's CTF (43/1335)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/22</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Affinity CTF 2019 - Quals (111/450)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/09</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">N1CTF 2019 (361/858)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/08</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">DefCamp CTF Qual 2019 (115/501)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/08</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Tokyo Westerns CTF 2019 (157/1288)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/09/01</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">SECARMY CTF 2.0 Jr. (55/1655)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/08/22</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">CyBRICS CTF 2019 (198/1188)</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/07/21</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">사이버 작전 사령부</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/05/23</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">육군 19-1기 정보보호병 입대</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/03/25</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">RANSOMWHERE 프로젝트 발표</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">19/01/12</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<!-- 2018 -->
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-time-base-wrapper">
+						<span class="t-time">2018</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">K-Shield Jr. 1기 2등 수료</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/12/27</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Creative 거북이 연구그룹 우수상 "경돌이와 경순이"</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/12/20</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">KCTF 출제위원</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/12/19</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">GuardianCTF 2018 10등</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/11/24</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">K-Shield Jr. 1기 합격</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/09/10</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">인코그니토 발표 "LOS를 통한 SQL Injection 기법 정리"</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/08/17</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">경기대 침해사고대응팀(CERT) 근무</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/02/26</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">Creative 거북이 연구그룹 최우수상 "K-AI"</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/06/20</span>
+					</span>
+				</div>
+			</div>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">K.knock 8기 정회원</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">18/02/13</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<!-- 2017 -->
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-time-base-wrapper">
+						<span class="t-time">2017</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">K.knock 8기 준회원</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">17/03/09</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="t-event">
+				<div class="t-title-wrapper">
+					<span class="t-title">경기대학교 입학</span>
+					<span class="t-time-wrapper">
+						<span class="t-time">17/03/02</span>
+					</span>
+				</div>
+			</div>
+		</li>
+	</ul>
+</article>
