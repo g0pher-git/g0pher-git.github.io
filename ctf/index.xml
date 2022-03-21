@@ -7,5 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 08 Mar 2022 21:47:38 +0900</lastBuildDate><atom:link href="https://o_o.jseung.me/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 Vishwactf</title>
+      <link>https://o_o.jseung.me/ctf/2020/vishwactf/</link>
+      <pubDate>Mon, 21 Mar 2022 21:33:14 +0900</pubDate>
+      
+      <guid>https://o_o.jseung.me/ctf/2020/vishwactf/</guid>
+      <description>WEB Stock Bot  We have our online shop of computer related accessories. So for easy customer interaction we have made a stock bot which will give you how many units of enlisted products are available.
+https://st0ck-b0t.vishwactf.com/
+ 페이지에 접속해보면 봇에게 특정 상품을 요구할 수 있다. 아무거나 입력해보면 패킷 상에서 다음과 같은 결과를 받아볼 수 있다.
+&amp;lt;br /&amp;gt; &amp;lt;b&amp;gt;Warning&amp;lt;/b&amp;gt;: file_get_contents(hihihihihihihih): failed to open stream: No such file or directory in &amp;lt;b&amp;gt;/opt/app-root/src/Products/check.</description>
+    </item>
+    
+    <item>
+      <title>24th Hackingcamp Ctf</title>
+      <link>https://o_o.jseung.me/ctf/2020/24th-hackingcamp-ctf/</link>
+      <pubDate>Fri, 18 Mar 2022 12:34:11 +0900</pubDate>
+      
+      <guid>https://o_o.jseung.me/ctf/2020/24th-hackingcamp-ctf/</guid>
+      <description>WEB Basic Auth  어디로든 문~~~ 은 잠겨있습니다. 열쇠가 필요하신가요?
+ #! /usr/bin/env python3 #-*- coding: utf-8 -*-  from flask import Flask from flask import request, url_for  from functools import wraps from flag import FLAG import os, json  server = Flask(__name__) server.secret_key = os.urandom(32)   def check_auth(f):  @wraps(f)  def func(*args, **kwargs):  page = kwargs[&amp;#39;page&amp;#39;]  if page.split(&amp;#39;.&amp;#39;)[-1] in [&amp;#39;js&amp;#39;, &amp;#39;css&amp;#39;, &amp;#39;png&amp;#39;, &amp;#39;jpg&amp;#39;]:  pass  else:  auth = request.</description>
+    </item>
+    
   </channel>
 </rss>
