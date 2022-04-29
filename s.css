@@ -1,0 +1,30 @@
+html, body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+div.profile-image {
+    text-align: right;
+}
+
+p#hi {
+    font-size: 1.5rem;
+}
+
+span.typewrite {
+    font-family: 'Permanent Marker', cursive;
+}
+
+p#nickname {
+    font-family: 'Walter Turncoat', cursive;
+    color: #aaa
+}
+
+.rain {
+    position: fixed;
+    top: -100px;
+    z-index: 0;
+    filter: invert(1) blur(1px);
+}
