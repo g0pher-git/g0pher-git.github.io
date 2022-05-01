@@ -28,3 +28,16 @@ p#nickname {
     z-index: 0;
     filter: invert(1) blur(1px);
 }
+
+@media ( max-width: 1000px ) {
+    div.profile-image {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    div.intro {
+        padding: 0 100;
+    }
+    body {
+        zoom: 1.5;
+    }
+}

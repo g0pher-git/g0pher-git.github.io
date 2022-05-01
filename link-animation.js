@@ -9,7 +9,7 @@ class RainingLink {
             </a>
         </div>`);
         $("#background").append($obj);
-        $obj.animate({ top  : (window.outerHeight) + "px" },speed);
+        $obj.animate({ top  : (window.innerHeight) + "px" },speed);
         $.when($obj).then(function() {
             $obj.remove();
         })
@@ -18,7 +18,7 @@ class RainingLink {
 
 function rain_random (link, img) {
     size  = Math.round(Math.random() * 10) + 30;
-    xpos  = Math.random() * window.outerWidth;
+    xpos  = Math.random() * window.innerWidth;
     speed = Math.round(Math.random() * 3000) + 15000;
     term  = Math.round(Math.random() * 700);
 

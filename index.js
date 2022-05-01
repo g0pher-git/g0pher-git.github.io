@@ -13,11 +13,11 @@ const links = [
     {
         link : "https://instagram.com/g0pher_",
         img : "./img/thin_instagram.png"
-    },
-    {
-        link : "https://www.linkedin.com/in/jseung",
-        img : "./img/thin_linkedin.png"
     }
+    // {
+    //     link : "https://www.linkedin.com/in/jseung",
+    //     img : "./img/thin_linkedin.png"
+    // }
 ]
 
 let timerId = setInterval(function() {
