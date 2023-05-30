@@ -5,6 +5,10 @@ html, body {
     
 }
 
+a {
+    color: #8f8f8f;
+}
+
 div.profile-image {
     text-align: right;
 }
